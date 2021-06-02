@@ -25,7 +25,7 @@ list-style: none
     color: white
 }
 .navbar li a:hover{
-    color: brown;
+    color: rgb(107, 230, 103);
 }
 img{
     width: 212px;
@@ -36,6 +36,22 @@ h2{
     font-style: italic;
     text-align-last: center;
     background-color: wheat;
+}
+.class{
+  width: 1350px;
+  height: 250px;
+  background-color: rgb(255, 217, 0);
+  animation-name: example;
+  animation-duration: 7s;
+}
+
+@keyframes example {
+  from {
+    width: 300px;  
+    background-color: red;}
+  to {
+    width:1350px;  
+    background-color: rgb(0, 255, 42);}
 }
 footer{
     position: relative;
@@ -57,12 +73,53 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+.Hello { grid-area: header; }
+.Myself { grid-area: menu; }
+.Rishabh { grid-area: main; }
+.Jain { grid-area: right; }
+.Html { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #f3f7f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+
+    color: rgb(121, 177, 121);
+  background-color: rgba(0, 0, 0, 0.918);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+
+}
+div .hi{
+    text-shadow: 2px 2px #FF0000;
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+div .property{
+    width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+}
 
 .social{
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 30px;
 }
 .social li {
 margin: 0% 10px;
@@ -87,7 +144,7 @@ margin: 0% 10px;
     opacity: .4;
 }
 .class{
-    background-color: brown;
+    background-color: rgb(42, 165, 42);
     height: 610px;
 }
 .fa-instagram {
